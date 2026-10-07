@@ -1,0 +1,8 @@
+components:
+  - name: worker
+    runtime: python
+    target: container
+    path: src/worker
+    dockerfile: src/worker/Dockerfile
+    app-test: worker-test
+    app-prod: worker
